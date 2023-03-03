@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let a = +prompt ("Nhập a");
+     let b = +prompt ("Nhập b");
+     let c = +prompt ("Nhập c");
+     if (a>b && a>c){
+        document.write(`số thứ nhất là ${a} là số lớn nhất trong ba số ${a}, ${b}, ${c}`)
+     }else if (b>a && b>c){
+        document.write(`số thứ hai là ${b} là số lớn nhất trong ba số ${a}, ${b}, ${c}`)
+     }else if (c>b && c>a){
+        document.write(`số thứ ba là ${c} là số lớn nhất trong ba số ${a}, ${b}, ${c}`)
+     }else if(a==b && a>c){
+        document.write(`số thứ nhất là ${a} và số thứ hai là ${b} là số lớn nhất trong ba số ${a}, ${b}, ${c}`)
+     }else if(a==c && a>b){
+        document.write(`số thứ nhất là ${a} và số thứ ba là ${c} là số lớn nhất trong ba số ${a}, ${b}, ${c}`)
+     }else if(b==c && b>a){
+        document.write(`số thứ hai là ${b} và số thứ ba là ${c} là số lớn nhất trong ba số ${a}, ${b}, ${c}`)
+     }  else if (a==b && b==c){
+        document.write(`3 số bằng nhau có giá trị là ${a}`)
+     }
+    </script>
+</body>
+</html>

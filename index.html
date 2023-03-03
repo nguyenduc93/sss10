@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Nhập số năm</label>
+    <input type="text" id="d">
+    <button onclick="b()" type="submit"> click</button>
+    <p id="q">Kết quả</p>
+    <script>
+        function b() {
+            let x = "Năm Nhuận"
+            let y = "Năm Không Nhuận"
+            let z = document.getElementById("d").value;
+            let a = z % 4 == 0;
+            let m = z % 100 == 0;
+            let n = z % 400 == 0;
+            if (m) {
+                if (n) {
+                    document.getElementById("q").innerHTML = z + " là " + x;
+                }
+                else {
+                    document.getElementById("q").innerHTML = z + " là " + y;
+                }
+            }
+            else if (a){
+                document.getElementById("q").innerHTML = z + " là " + x;
+            }
+            else{
+                document.getElementById("q").innerHTML = z + " là " + y;
+            }
+        }
+    </script>
+</body>
+
+</html>
